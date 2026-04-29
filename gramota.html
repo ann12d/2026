@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Грамоты</title>
+    
+    <!-- Подключение шрифтов -->
+    <link href='https://fonts.googleapis.com/css?family=Calibri' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Calibri', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: white;
+            font-size: 18px;
+            line-height: 1.6;
+            background-image: url('foto/fon/photo_5303438867531160797_y.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            min-height: 100vh;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-top: 20px;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .courses-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .course-card {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+            border-color: #3498db;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .course-card i {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .course-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .course-card p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .course-link {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: #3498db;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .course-link:hover {
+            background: #2980b9;
+        }
+        
+        .back-container {
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background: #3498db;
+            border-color: #3498db;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .courses-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .course-card {
+                width: 100%;
+                max-width: 400px;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1 class="page-title">Грамоты и награды</h1>
+            <p class="page-subtitle">Достижения за время обучения в колледже</p>
+        </header>
+        
+        <div class="courses-container">
+            <div class="course-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h2>1 Курс</h2>
+                <p>Грамоты и достижения первого года обучения</p>
+                <a href="1.html" class="course-link">Смотреть грамоты</a>
+            </div>
+            
+            <div class="course-card">
+                <i class="fas fa-book-open"></i>
+                <h2>2 Курс</h2>
+                <p>Грамоты и достижения второго года обучения</p>
+                <a href="2.html" class="course-link">Смотреть грамоты</a>
+            </div>
+            
+            <div class="course-card">
+                <i class="fas fa-chart-line"></i>
+                <h2>3 Курс</h2>
+                <p>Грамоты и достижения третьего года обучения</p>
+                <a href="3.html" class="course-link">Смотреть грамоты</a>
+            </div>
+        </div>
+        <div class="course-card">
+                <i class="fas fa-chart-line"></i>
+                <h2>4 Курс</h2>
+                <p>Грамоты и достижения четвертого года обучения</p>
+                <a href="4.html" class="course-link">Смотреть грамоты</a>
+            </div>
+        </div>
+        
+        <div class="back-container">
+            <a href="glavnstr.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Вернуться на главную
+            </a>
+        </div>
+        
+        <footer>
+            <p>© 2024 Портфолио Андреевой Анны</p>
+        </footer>
+    </div>
+</body>
+</html>
